@@ -1,4 +1,4 @@
-import styles from "../header.module.scss";
+import styles from "./header.module.scss";
 import React from "react";
 import { useLayoutEffect, useRef} from "react";
 import gsap from "gsap";
@@ -55,16 +55,18 @@ function Header() {
        }).from(["#info-box1", "#info-box2"], {
         opacity: 0,
         delay: 0.3,
-        y: "+=30"
+        y: "+=30",
+      }).to("#relative", {
+        clearProps: "opacity, y"
       })
     }, comp)
     
-     return () => ctx.revert()
+     return () => ctx.revert();
     }, [])
 
 
     return(
-        <div  ref={comp} className={styles.relative}>
+        <div id="relative" ref={comp} className={styles.relative}>
         <div id="intro-slider" className={styles.HeaderContainer}>
             <h1 id="Title-one" className={styles.heading}>Pillar</h1>
             <div  id="Box1" className={styles.box1}>LABS</div>

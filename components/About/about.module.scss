@@ -1,0 +1,84 @@
+
+.AboutContainer {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.AboutContent {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.star {
+    height: 300px;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .AboutTitle {
+   color: white;
+  font-size: 10rem;
+  width: auto;
+  font-family: apercu, sans-serif;
+ 
+  }
+
+  .AboutText {
+    font-family: apercu, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 70%; /* Limit the width to 90% of its container */
+    word-wrap: break-word; /* Break words to next line if needed */
+    // margin-left: auto; /* Center align the text block */
+    // margin-right: auto; /* Center align the text block */
+  }
+
+  .TextContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    line-height: 1.5;
+  }
+
+  .TitleLabsContainer {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: start; /* Align horizontally */
+    flex-direction: row; /* Place items side by side */
+  }
+
+  .labs {
+    height: 75px;
+    width: 120px;
+    background-color: rgb(77, 212, 131);
+    align-items: center;
+    font-family: apercu, sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+   
+    transform: rotate(-20deg);
+  }
+  

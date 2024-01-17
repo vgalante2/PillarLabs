@@ -5,20 +5,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
- background-color: black;
+    background-color: black;
+
+
 
 }
 
+
+
+.relative {
+   max-height: 100vh;
+  
+}
+
+.HeaderContainer, .HeaderContainerTwo, .HeaderContainerFour{
+    max-height: fit-content; /* Adjust this as needed */
+    padding: 20px; /* Optional, for some internal spacing */
+    /* Other styles remain unchanged */
+}
+
 .heading {
-    font-size: 11rem;
+    font-size: 15rem;
     font-family: apercu, sans-serif;
     padding: 2rem 1rem;
    color: white;
 }
 
 .box1 {
-    height: 45px;
-    width: 80px;
+    height: 75px;
+    width: 120px;
     background-color: rgb(77, 212, 131);
     align-items: center;
     font-family: apercu, sans-serif;
@@ -29,8 +44,8 @@
     justify-content: center;
     border-radius: 4px;
     position: relative;
-    top: 50px;
-    right: 65px;
+    top: 60px;
+    right: 75px;
     transform: rotate(-20deg);
 }
 
@@ -44,18 +59,19 @@
     justify-content: center;
  background-color: rgb(134, 134, 134);
 
+
 }
 
 .headingTwo {
-    font-size: 11rem;
+    font-size: 15rem;
     font-family: apercu, sans-serif;
     padding: 2rem 1rem;
    color: rgb(0, 0, 0);
 }
 
 .box2 {
-    height: 45px;
-    width: 80px;
+    height: 75px;
+    width: 120px;
     background-color: rgb(126, 77, 212);
     align-items: center;
     font-family: apercu, sans-serif;
@@ -66,8 +82,8 @@
     justify-content: center;
     border-radius: 4px;
     position: relative;
-    top: 95px;
-    right: 35%;
+    top: 105px;
+    right: 44%;
     transform: rotate(-20deg);
 }
 
@@ -129,7 +145,7 @@ font-family: apercu, sans-serif;
 height: 300px;
 width: 500px;
 border-radius: 20px;
-background-color: rgb(77, 212, 131);
+background-color: #4dd483;
 display: flex;
 align-items: center;
 justify-content: center;
