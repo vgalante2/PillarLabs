@@ -11,6 +11,7 @@ import { useGSAP } from '@gsap/react';
 function About() {
     const HeadingRef = useRef(null);
     const FlashRef = useRef(null); // Use a ref for the container
+    const AboveRef = useRef(null);
 
     gsap.registerPlugin(ScrollTrigger,MotionPathPlugin);
 
@@ -18,6 +19,7 @@ function About() {
 
         const path = document.querySelector('#line path');
         const pathLength = path.getTotalLength();
+       
 
         gsap.set(path, { strokeDasharray: pathLength, strokeDashoffset: pathLength });
 
@@ -74,6 +76,18 @@ function About() {
         }
         );
 
+        gsap.to("#glow", {
+            scrollTrigger: {
+                trigger: AboveRef.current,
+                start: "top top",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+              },
+              color: "#7e4dd4", // The new color
+        duration: 0.5, 
+        }
+        );
+
         return () => {
             // On cleanup, kill all ScrollTriggers to prevent memory leaks
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -97,17 +111,18 @@ function About() {
          <div className={styles.TitleLabsContainer}> {/* New container for title and labs */}
           <h1 id="Heading" ref={HeadingRef} className={styles.AboutTitle}>CREATORS </h1>
           <div className={styles.labs}></div>
-          <svg className={styles.line} id="line" width="1298" height="1144" viewBox="0 0 2498 1744" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path  d="M2476 0V802H22V1744" stroke="url(#paint0_linear_17_4)" stroke-width="43"/>
-              <defs>
-<linearGradient id="paint0_linear_17_4" x1="1250" y1="0" x2="1250" y2="826" gradientUnits="userSpaceOnUse">
+          <svg className={styles.line} id="line" width="1300" height="1244"  viewBox="0 0 2676 2594" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2654 0V802H22V1744V2572H596" stroke="url(#paint0_linear_17_4)" stroke-width="43"/>
+          <defs>
+              <linearGradient id="paint0_linear_17_4" x1="1428" y1="0" x2="1428" y2="826" gradientUnits="userSpaceOnUse">
 <stop offset="0.87" stop-color="#4DD483"/>
 <stop offset="1" stop-color="#7E4DD4"/>
-</linearGradient>
-              </defs>
-              </svg>
+                </linearGradient>
+        </defs>
+         </svg>
+
         </div>
-         <p className={styles.AboutText} >"Each project we undertake is a symphony of precise technical craftsmanship and bold creative vision. Our team of seasoned professionals combines cutting-edge technological solutions with innovative design principles to transform your ideas into reality. We believe that true mastery lies in the seamless integration of the technical and the artistic, ensuring that every detail is meticulously crafted and every concept is brought to life with flair and imagination. From the initial concept to the final product, our commitment is to not only meet but exceed your expectations, delivering results that resonate both technically and artistically."</p>
+         <p  ref={AboveRef} className={styles.AboutText} >"Each project we undertake is a symphony of precise technical craftsmanship and bold creative vision. Our team of seasoned professionals combines cutting-edge technological solutions with innovative design principles to transform your ideas into reality. We believe that true mastery lies in the seamless integration of the technical and the artistic, ensuring that every detail is meticulously crafted and every concept is brought to life with flair and imagination. From the initial concept to the final product, our commitment is to not only meet but exceed your expectations, delivering results that resonate both technically and artistically."</p>
          </div>
          <div  id="info-container" className={styles.InfoContainer}>
             <div  id="info-box1" className={styles.infoBox_One}>
@@ -123,10 +138,13 @@ function About() {
            
         </div>
 
-        <div className={styles.secondContainer}> 
+        <div className={styles.secondContainer} > 
+        <h1 id="glow"  className={styles.secondHead}>ABOVE & beyond </h1>
         <div className={styles.secondContentContainer}>
-        <h1 className={styles.secondHeadContainer}>head </h1>
-        <p className={styles.secondTextContainer}> revarbeioudrbevr </p>
+        
+       
+
+        <p className={styles.secondText}> Embark on a transformative journey with our skilled team of developers, designers, editors, and digital artisans, each committed to elevating your business's digital presence to unprecedented heights. Harness the full potential of innovation as we blend cutting-edge technology with creative prowess, ensuring that every digital asset we touch evolves into a mind-blowing masterpiece. With us, your vision will not only take shape but will be brought to life in ways that captivate, engage, and leave a lasting impact. </p>
         </div>
         </div>
       </div>

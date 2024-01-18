@@ -74,7 +74,7 @@
 
   .line {
     position: absolute;
-    transform: translate(-230px, 450px);
+    transform: translate(-240px, 650px);
 
   }
 
@@ -140,23 +140,37 @@
     }
 
     .secondContainer {
-        height: 30vh;
+        height: 50vh;
         width: auto;
         background-color: black;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 
     .secondContentContainer {
         height: 40%;
-        width: 60%;
-        background-color: white;
+        width: 70%;
+        border: 2px white solid;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border-radius: 20px;;
+        border-radius: 20px;
+        padding: 2rem; 
     }
 
-  
+    .secondHead {
+       font-size: 10rem;
+       color: rgb(0, 0, 0);  
+       font-family: apercu, sans-serif; 
+       z-index: 10;
+    }
+    .secondText {
+        font-family: apercu, sans-serif; 
+        color: white; 
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem; 
+    }
