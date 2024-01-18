@@ -80,16 +80,7 @@ function Header() {
             <h1 id="Title-four" className={styles.headingFour}>Pillar</h1>
             <div id="Box4" className={styles.box4}>LABS</div>
             </div>
-            <div id="info-container" className={styles.InfoContainer}>
-            <div id="info-box1" className={styles.infoBox1}>
-            <h1> Development </h1>
-            <p>Specializing in the creation of bespoke digital products, we are dedicated to bringing your brand to life. Our expertise lies in designing stunning websites, unique logos, and captivating creatives that not only resonate with your audience but also elevate your online presence.</p>
-            </div>
-            <div id="info-box2" className={styles.infoBox2}>
-            <h1> Creatives </h1>
-            <p>From breathtaking drone shots that capture a unique perspective, to engaging social media videos that tell your story, and stunning digital art that breaks the conventional boundaries - we bring your ideas to life. Our team combines technical expertise with artistic flair, ensuring every project we undertake is not just visually appealing, but also strategically crafted to resonate with your audience. </p>
-            </div>
-            </div>
+            
         </div>
         </div>
     )

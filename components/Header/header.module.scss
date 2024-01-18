@@ -15,7 +15,7 @@
 
 .relative {
    max-height: 100vh;
-  
+ 
 }
 
 .HeaderContainer, .HeaderContainerTwo, .HeaderContainerFour{
@@ -72,7 +72,7 @@
 .box2 {
     height: 75px;
     width: 120px;
-    background-color: rgb(126, 77, 212);
+    background-color: #7e4dd4;
     align-items: center;
     font-family: apercu, sans-serif;
     font-weight: 700;
@@ -102,7 +102,7 @@
 }
 
 .headingFour {
-    font-size: 11rem;
+    font-size: 16rem;
     font-family: apercu, sans-serif;
     padding: 2rem 1rem;
    color: rgb(255, 255, 255);
@@ -122,44 +122,10 @@
     justify-content: center;
     border-radius: 4px;
     position: relative;
-    bottom: 114px;
-    left: 440px;
+    left: 95%;
+   bottom: 135px;
+    
+    
     
 }
 
-.infoBox1 {
-height: 300px;
-width: 500px;
-border-radius: 20px;
-background-color: rgb(126, 77, 212);
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-gap: 20px;
-padding: 1rem 2rem;
-font-family: apercu, sans-serif;
-
-}
-
-.infoBox2 {
-height: 300px;
-width: 500px;
-border-radius: 20px;
-background-color: #4dd483;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-padding: 1rem 2rem;
-gap: 20px;
-font-family: apercu, sans-serif;
-}
-
-.InfoContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 50px;
-}

@@ -12,14 +12,19 @@
     width: 100%;
     background-color: black;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
    
 }
 
 
 .star {
-    height: 300px;
+    height: 200px;
     animation: spin 5s linear infinite;
+    position: absolute;
+    
+    
 }
 
 @keyframes spin {
@@ -43,15 +48,17 @@
     font-family: apercu, sans-serif;
     font-size: 1.5rem;
     color: white;
+    text-align: center;
     max-width: 70%; /* Limit the width to 90% of its container */
     word-wrap: break-word; /* Break words to next line if needed */
-    // margin-left: auto; /* Center align the text block */
-    // margin-right: auto; /* Center align the text block */
+    margin-left: auto; /* Center align the text block */
+    margin-right: auto; /* Center align the text block */
+    z-index: 2;
   }
 
   .TextContainer {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: auto;
@@ -61,13 +68,13 @@
   .TitleLabsContainer {
     display: flex;
     align-items: center; /* Align vertically */
-    justify-content: start; /* Align horizontally */
+    justify-content: center; /* Align horizontally */
     flex-direction: row; /* Place items side by side */
   }
 
   .labs {
-    height: 75px;
-    width: 120px;
+    height: 65px;
+    width: 110px;
     background-color: rgb(77, 212, 131);
     align-items: center;
     font-family: apercu, sans-serif;
@@ -78,7 +85,50 @@
     justify-content: center;
     border-radius: 4px;
     position: relative;
-   
+   right: 50px;
+   top: 30px;
     transform: rotate(-20deg);
   }
   
+  .svg {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+  }
+
+  .infoBox_One {
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgb(126, 77, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem 2rem;
+    font-family: apercu, sans-serif;
+    
+    }
+    
+    .infoBox_Two {
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: #4dd483;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 20px;
+    font-family: apercu, sans-serif;
+    }
+    
+    .InfoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 50px;
+    }

@@ -2,6 +2,7 @@
   "name": "pillarlabs",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.0.2",
     "gsap": "^3.12.4",
     "next": "14.0.4",
     "react": "^18",
