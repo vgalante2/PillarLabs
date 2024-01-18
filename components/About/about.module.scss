@@ -72,10 +72,16 @@
     flex-direction: row; /* Place items side by side */
   }
 
+  .line {
+    position: absolute;
+    transform: translate(-230px, 450px);
+
+  }
+
   .labs {
     height: 65px;
     width: 110px;
-    background-color: rgb(77, 212, 131);
+    background-color: #4dd483;
     align-items: center;
     font-family: apercu, sans-serif;
     font-weight: 700;
@@ -93,14 +99,14 @@
   .svg {
     position: absolute;
     left: 0;
-    z-index: 0;
+    z-index: 1;
   }
 
   .infoBox_One {
     height: 300px;
     width: 500px;
     border-radius: 20px;
-    background-color: rgb(126, 77, 212);
+    background-color: #7e4dd4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,3 +138,25 @@
         flex-direction: row;
         gap: 50px;
     }
+
+    .secondContainer {
+        height: 30vh;
+        width: auto;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .secondContentContainer {
+        height: 40%;
+        width: 60%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;;
+    }
+
+  
