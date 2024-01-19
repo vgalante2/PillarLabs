@@ -2,37 +2,55 @@ import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import styles from './horizontalscroll.module.scss';
+import { useGSAP } from '@gsap/react';
 
-const HorizontalScroll = ({ children }) => {
-    const containerRef = useRef(null);
+
+
+function HorizontalScroll() {
+    const sectionRef = useRef(null);
+    const triggerRef = useRef(null);
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        const element = containerRef.current;
-        const totalWidth = element.scrollWidth;
+        const section = sectionRef.current;
+        const trigger = triggerRef.current;
 
-        const scrollTween = gsap.to(element, {
-            x: () => -(totalWidth - window.innerWidth),
-            ease: 'none',
-            scrollTrigger: {
-                trigger: element,
-                pin: true,
-                scrub: 1,
-                end: () => `+=${totalWidth}`,
-            },
-        });
+        if (section && trigger) {
+            const scrollTween = gsap.fromTo(section,
+                { x: 0 },
+                {
+                    x: () => -(section.scrollWidth - window.innerWidth),
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: trigger,
+                        start: "top top",
+                        end: () => `+=${section.scrollWidth}`,
+                        scrub: 0.6,
+                        pin: true
+                    }
+                }
+            );
 
-        return () => {
-            scrollTween.kill();
-        };
+            return () => scrollTween.kill();
+        }
     }, []);
 
     return (
-        <div ref={containerRef} className={styles.horizontalScrollSection}>
-            {children}
-        </div>
+        <section className={styles.OutsideScrollSection} ref={triggerRef}>
+            <div className={styles.InnerScrollSection} ref={sectionRef}>
+                <div className={styles.ScrollSection}>
+                Section 1
+                </div>
+                <div className={styles.ScrollSection}>
+                    <h1>Section 2</h1>
+                </div>
+                <div className={styles.ScrollSection}>
+                    <h1>Section 3</h1>
+                </div>
+            </div>
+        </section>
     );
-};
+}
 
 export default HorizontalScroll;

@@ -1,10 +1,13 @@
 
 .AboutContainer {
-    height: 100vh;
+    height:  auto;
     width: 100%;
     background-color: black;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
 }
 
 .AboutContent {
@@ -74,7 +77,7 @@
 
   .line {
     position: absolute;
-    transform: translate(-240px, 650px);
+    transform: translate(-870px, 850px);
 
   }
 
@@ -103,7 +106,7 @@
   }
 
   .infoBox_One {
-    height: 300px;
+    height: 200px;
     width: 500px;
     border-radius: 20px;
     background-color: #7e4dd4;
@@ -118,7 +121,7 @@
     }
     
     .infoBox_Two {
-    height: 300px;
+    height: 200px;
     width: 500px;
     border-radius: 20px;
     background-color: #4dd483;
@@ -140,36 +143,45 @@
     }
 
     .secondContainer {
-        height: 50vh;
+        height: auto;
         width: auto;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        
+        
     }
 
-    .secondContentContainer {
-        height: 40%;
-        width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        border-radius: 20px;
-        padding: 2rem; 
-    }
+   .FirstHalf {
+    display: flex;
+    line-height: 0.2;
+    
+   }
+
+   .SecondHalf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+   }
+
 
     .secondHead {
        font-size: 10rem;
        color: rgb(0, 0, 0);  
        font-family: apercu, sans-serif; 
        z-index: 10;
+       line-height: 0.5;
+    
+        
     }
     .secondText {
         font-family: apercu, sans-serif; 
         color: white; 
         font-size: 2rem;
         text-align: center;
-        padding: 2rem; 
+        padding: 1rem 1.5rem;
+       
     }

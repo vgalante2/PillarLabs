@@ -4,8 +4,37 @@
 height: 100vh;
 width: auto;
 background-color: black;
+display: flex;
+justify-content: center;
+
+flex-direction: column;
+gap: 150px;
+
 }
 
 .workContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.workHeading {
+    color: white;
+    font-size: 5rem;;
+}
+
+.workContent {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+    
+    
+}
+
+.workCard {
+    height: 800px;
+    width: 500px;
+    background-color: rgb(23, 23, 23);
+    border-radius: 20px;
 
 }

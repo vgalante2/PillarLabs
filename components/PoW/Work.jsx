@@ -10,9 +10,16 @@ function Work() {
   
   
     return (
-    <div className={styles.workSection}>Work
+    <div className={styles.workSection}>
     <div className={styles.workContainer}>
-    Slide 1
+    <h1 className={styles.workHeading}>
+   Hello
+    </h1>
+    </div>
+    <div className={styles.workContent}>
+    <div className={`${styles.workCard} ${styles.Card1}`}></div>
+    <div className={`${styles.workCard} ${styles.Card2}`}></div>
+    <div className={`${styles.workCard} ${styles.Card3}`}></div>
     </div>
     </div>
   )
