@@ -14,7 +14,7 @@ function Work() {
     
     <div className={styles.workContainer}>
     <h1 className={styles.workHeading}>
-   Hello
+  
     </h1>
     </div>
     <div className={styles.workContent}>

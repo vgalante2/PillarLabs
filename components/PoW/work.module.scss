@@ -14,13 +14,17 @@ gap: 150px;
 
 .workContainer {
 display: flex;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
+height: 20vh;
 }
 
 .workHeading {
     color: white;
-    font-size: 5rem;;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+
 }
 
 .workContent {
@@ -32,28 +36,28 @@ align-items: center;
 }
 
 .workCard {
-    height: 800px;
-    width: 500px;
+    height: 500px;
+    width: 400px;
     background-color: rgb(23, 23, 23);
     border-radius: 20px;
 
 }
 
 .FirstH1 {
-font-size: 5rem;
+font-size: 3rem;
 padding: 1rem;
 font-family: apercu, sans-serif;
 }
 
 .SecondH1 {
-    font-size: 5rem;
+    font-size: 3rem;
     padding: 1rem;
     font-family: apercu, sans-serif;
     
 }
 
 .ThirdH1 {
-    font-size: 5rem;
+    font-size: 3rem;
     padding: 1rem;
     font-family: apercu, sans-serif;
 }
