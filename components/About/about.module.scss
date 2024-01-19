@@ -152,11 +152,10 @@
     .secondContentContainer {
         height: 40%;
         width: 70%;
-        border: 2px white solid;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
         border-radius: 20px;
         padding: 2rem; 
     }
