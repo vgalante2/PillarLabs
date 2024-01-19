@@ -40,13 +40,13 @@ function HorizontalScroll() {
         <section className={styles.OutsideScrollSection} ref={triggerRef}>
             <div className={styles.InnerScrollSection} ref={sectionRef}>
                 <div className={styles.ScrollSection}>
-                Section 1
+               <h1 className={styles.Head1}>Create a brand with a story</h1>
                 </div>
                 <div className={styles.ScrollSection}>
-                    <h1>Section 2</h1>
+                    <h1 className={styles.Head2}>Add some Personality</h1>
                 </div>
                 <div className={styles.ScrollSection}>
-                    <h1>Section 3</h1>
+                    <h1 className={styles.Head3}>and let us bring it to life</h1>
                 </div>
             </div>
         </section>
