@@ -1,3 +1,6 @@
+@import 'variables.module.scss';
+
+
 .HeaderContainer {
 
     height: 100vh;
@@ -29,12 +32,13 @@
     font-family: apercu, sans-serif;
     padding: 2rem 1rem;
    color: white;
+   text-align: center;
 }
 
 .box1 {
     height: 75px;
     width: 120px;
-    background-color: rgb(77, 212, 131);
+    background-color: $green;
     align-items: center;
     font-family: apercu, sans-serif;
     font-weight: 700;
@@ -57,22 +61,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
- background-color: rgb(134, 134, 134);
+ background-color: rgb(0, 0, 0);
 
 
 }
 
 .headingTwo {
-    font-size: 15rem;
+    font-size: 12rem;
+    text-align: center;
     font-family: apercu, sans-serif;
     padding: 2rem 1rem;
-   color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
 }
 
 .box2 {
     height: 75px;
     width: 120px;
-    background-color: #7e4dd4;
+    background-color: $purple;
     align-items: center;
     font-family: apercu, sans-serif;
     font-weight: 700;

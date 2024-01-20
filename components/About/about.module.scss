@@ -1,3 +1,5 @@
+@import 'variables.module.scss';
+
 
 .AboutContainer {
     height: auto;
@@ -77,14 +79,15 @@
 
   .line {
     position: absolute;
-    transform: translate(-710px, 500px);
+    left: -200px;
 
+    z-index: 1;
   }
 
   .labs {
     height: 65px;
     width: 110px;
-    background-color: #4dd483;
+    background-color: $green;
     align-items: center;
     font-family: apercu, sans-serif;
     font-weight: 700;
@@ -102,6 +105,7 @@
   .svg {
     position: absolute;
     left: -150px;
+    bottom: -470px;
     z-index: 1;
 
   }
@@ -110,7 +114,7 @@
     height: 200px;
     width: 450px;
     border-radius: 20px;
-    background-color: #7e4dd4;
+    background-color: $purple;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +129,7 @@
     height: 200px;
     width: 450px;
     border-radius: 20px;
-    background-color: #4dd483;
+    background-color: $green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,5 +190,5 @@
         font-size: 1.2rem;
         text-align: center;
         padding: 1rem 1.5rem;
-       z-index: 5;;
+       z-index: 5;
     }

@@ -1,4 +1,4 @@
-
+@import 'variables.module.scss';
 
 .workSection {
 height: 100vh;
@@ -35,29 +35,60 @@ height: 20vh;
     
 }
 
-.workCard {
-    height: 500px;
-    width: 400px;
-    background-color: rgb(23, 23, 23);
-    border-radius: 20px;
 
-}
 
-.FirstH1 {
-font-size: 3rem;
-padding: 1rem;
-font-family: apercu, sans-serif;
-}
 
-.SecondH1 {
-    font-size: 3rem;
-    padding: 1rem;
-    font-family: apercu, sans-serif;
-    
-}
 
-.ThirdH1 {
-    font-size: 3rem;
-    padding: 1rem;
-    font-family: apercu, sans-serif;
-}
+
+.card {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: $purple;
+    transition: all 0.5s;
+  }
+  
+  .card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card:hover::before,
+  .card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card:hover:after {
+    content: "HELLO";
+  }
