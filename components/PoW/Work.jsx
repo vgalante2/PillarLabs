@@ -18,9 +18,9 @@ function Work() {
     </div>
 
     <div className={styles.workContent}>
-    <div className={styles.card}>HOVER</div>
-    <div className={styles.card}>HOVER</div>
-    <div className={styles.card}>HOVER</div>
+    <div className={styles.card}>Marketing</div>
+    <div className={styles.card}>Digital Platform</div>
+    <div className={styles.card}>Creatives</div>
     </div>
 
     </div>
