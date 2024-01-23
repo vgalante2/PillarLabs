@@ -1,0 +1,90 @@
+.OutsideScrollSection {
+overflow: hidden;
+
+}
+
+.InnerScrollSection {
+  height: 100vh;
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  position: relative;
+  }
+
+  .ScrollSection {
+    height: 100vh;
+    flex-shrink: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: black;
+   color: white;
+   border: none;
+   margin: 0; 
+   box-sizing: border-box;
+  }
+
+  .ScrollOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+
+  .ScrollTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .BigText2 {
+     display: flex;
+     align-self: flex-start;
+     justify-content: flex-start;
+     position: relative;
+     top: 290px;
+  }
+
+  .SmallText2 {
+   width: 40%;
+ }
+
+
+  .Head1 {
+    font-size: 5rem;
+    font-family: apercu, sans-serif;
+    position: relative;
+   top: 30%;
+  }
+
+
+  .Head2 {
+    font-size: 10rem;
+    font-family: apercu, sans-serif;
+  } 
+
+
+  .Head3 {
+    font-size: 5rem;
+    font-family: apercu, sans-serif;
+  }
+
+  .pillar {
+    position: absolute;
+    bottom: 0;
+
+    height:300px;
+  }
+
+
+.drone {
+  height: 200px;
+  position: absolute;
+  bottom: 310px;
+  left: 45.5%;
+}
