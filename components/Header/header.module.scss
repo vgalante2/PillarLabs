@@ -27,12 +27,13 @@
     /* Other styles remain unchanged */
 }
 
-.heading {
+.headingOne {
     font-size: 15rem;
     font-family: apercu, sans-serif;
     padding: 2rem 1rem;
    color: white;
    text-align: center;
+
 }
 
 .box1 {
@@ -106,7 +107,7 @@
  width: auto;
 }
 
-.headingFour {
+.headingThree {
     font-size: 16rem;
     font-family: apercu, sans-serif;
     padding: 2rem 1rem;
@@ -114,7 +115,7 @@
    
 }
 
-.box4 {
+.box3 {
     height: 45px;
     width: 80px;
     background-color: rgb(255, 255, 255);
@@ -134,3 +135,7 @@
     
 }
 
+@media(max-width: 676px) {
+
+
+}

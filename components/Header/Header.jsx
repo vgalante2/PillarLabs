@@ -8,11 +8,18 @@ function Header() {
     const comp = useRef(null)
 
     useLayoutEffect(() => {
+      const isMobile = window.innerWidth < 768;
+      
     let ctx = gsap.context(() => {
       const t1 = gsap.timeline()
-      t1.from("#Title-one", {
+      t1.from(".relative", {
         opacity: 0,
         delay: 0.3,
+        y: isMobile ? "15" : "30" // Smaller movement on mobile
+    }),
+      t1.from("#Title-one", {
+        opacity: 0,
+        delay: 0.3,  
         y: "+=30"
       }).from("#Box1", {
         opacity: 0,
@@ -44,7 +51,7 @@ function Header() {
         opacity: 1,
         delay: 0.3,
        
-       }).from("#Box4", {
+       }).from("#Box3", {
         opacity: 0,
         delay: 0.1,
         
@@ -68,7 +75,7 @@ function Header() {
     return(
         <div id="relative" ref={comp} className={styles.relative}>
         <div id="intro-slider" className={styles.HeaderContainer}>
-            <h1 id="Title-one" className={styles.heading}>Pillar</h1>
+            <h1 id="Title-one" className={styles.headingOne}>Pillar</h1>
             <div  id="Box1" className={styles.box1}>LABS</div>
         </div>
         <div id="second-slider" className={styles.HeaderContainerTwo}>
@@ -77,8 +84,8 @@ function Header() {
         </div>
         <div id="fourth-slider" className={styles.HeaderContainerFour}>
            <div>
-            <h1 id="Title-four" className={styles.headingFour}>Pillar</h1>
-            <div id="Box4" className={styles.box4}>LABS</div>
+            <h1 id="Title-three" className={styles.headingThree}>Pillar</h1>
+            <div id="Box3" className={styles.box3}>LABS</div>
             </div>
             
         </div>
