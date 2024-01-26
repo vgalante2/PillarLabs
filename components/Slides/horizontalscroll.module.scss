@@ -1,3 +1,5 @@
+@import 'variables.module.scss';
+
 .OutsideScrollSection {
 overflow: hidden;
 
@@ -69,6 +71,24 @@ overflow: hidden;
     font-size: 10rem;
     font-family: apercu, sans-serif;
   } 
+
+  .labs {
+    height: 45px;
+    width: 90px;
+    background-color: $purple;
+    align-items: center;
+    font-family: apercu, sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+   right: 42px;
+   top: 105px;
+    transform: rotate(-30deg);
+  }
 
 
   .Head3 {
