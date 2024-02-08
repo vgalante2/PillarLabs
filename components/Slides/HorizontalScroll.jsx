@@ -86,12 +86,20 @@ function HorizontalScroll() {
 
                 </div>
                 <div className={`${styles.ScrollSection} ${styles.ScrollTwo}`}>
+                   <div className={styles.TextSection}>
                    <p className={styles.SmallText2}>we understand the power of a strong brand. In a digital world that's constantly evolving, staying ahead means not just keeping up with the times, but setting the pace. That's where our Brand Makeover service comes in. We specialize in transforming your brand to resonate with today's dynamic market and align with your evolving business goals.</p>
-                   <div className={styles.BigText2}>
+                   <div className={styles.BigTextSection}>
                     <h1 className={styles.Head2}>Brand Makover</h1>
                     <div className={styles.labs}></div>
+                    </div>
                    </div>
-                     
+                   <div className={styles.siteImg}>
+                     <img src="./site1.png" className={styles.site1} />
+                     <img src="./site5.png" className={styles.site2} />
+                     <img src="./site4.png" className={styles.site3} />
+                     <img src="./site2.png" className={styles.site4} />
+                     <img src="./site3.png" className={styles.site5} />
+                   </div>
                 </div>
                 <div className={`${styles.ScrollSection} ${styles.ScrollThree}`}>
                     <h1 className={styles.Head3}>and let us bring it to life</h1>

@@ -1,13 +1,14 @@
 import styles from "./header.module.scss";
 import React from "react";
-import { useLayoutEffect, useRef} from "react";
+import { useRef} from "react";
 import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 
 function Header() {
 
     const comp = useRef(null)
 
-    useLayoutEffect(() => {
+    useGSAP(() => {
       const isMobile = window.innerWidth < 768;
       
     let ctx = gsap.context(() => {

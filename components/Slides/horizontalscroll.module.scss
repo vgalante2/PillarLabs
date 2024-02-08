@@ -29,6 +29,9 @@ background-color: black;
    box-sizing: border-box;
   }
 
+
+    // SECTION 1 //
+
   .ScrollOne {
     display: flex;
     flex-direction: column;
@@ -36,27 +39,6 @@ background-color: black;
     justify-content: space-between;
     gap: 40px;
   }
-
-
-  .ScrollTwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  .BigText2 {
-     display: flex;
-     align-self: flex-start;
-     justify-content: flex-start;
-     position: relative;
-     top: 290px;
-  }
-
-  .SmallText2 {
-   width: 40%;
- }
 
 
   .Head1 {
@@ -67,34 +49,6 @@ background-color: black;
   }
 
 
-  .Head2 {
-    font-size: 10rem;
-    font-family: apercu, sans-serif;
-  } 
-
-  .labs {
-    height: 45px;
-    width: 90px;
-    background-color: $purple;
-    align-items: center;
-    font-family: apercu, sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    display: flex;
-    color: rgb(0, 0, 0);
-    justify-content: center;
-    border-radius: 4px;
-    position: relative;
-   right: 42px;
-   top: 105px;
-    transform: rotate(-30deg);
-  }
-
-
-  .Head3 {
-    font-size: 5rem;
-    font-family: apercu, sans-serif;
-  }
 
   .pillar {
     position: absolute;
@@ -110,3 +64,195 @@ background-color: black;
   bottom: 310px;
   left: 45.5%;
 }
+
+
+
+  // SECTION 2 //
+
+
+  .ScrollTwo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+
+  .TextSection {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+  }
+
+
+  .BigTextSection {
+     display: flex;
+     height: auto;
+     width: 100%;
+     padding: 1.5rem;
+
+
+  }
+
+  .SmallText2 {
+   width: 40%;
+   padding: 2rem;
+ }
+
+
+  .Head2 {
+    font-size: 9rem;
+    font-family: apercu, sans-serif;
+    width: 100%;
+  } 
+
+  .labs {
+    height: 45px;
+    width: 90px;
+    background-color: $purple;
+    align-items: center;
+    font-family: apercu, sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+      right: 72px;
+      top: 95px;
+    transform: rotate(-30deg);
+  }
+
+
+
+
+
+.siteImg {
+  height: 70%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+
+  &:hover {
+
+    .site1 {
+    
+    transform: rotate(-20deg) translateX(-60px) translateY(-200px);
+    }
+
+    .site2 {
+     
+      transform: rotate(-30deg) translateX(150px) translateY(100px);
+      }
+
+      .site3 {
+       
+        transform: rotate(20deg) translateX(500px) translateY(-90px);
+        }
+
+        .site4 {
+          
+          transform: rotate(-10deg) translateX(800px) translateY(-60px);
+          }
+
+          .site5 {
+            
+            transform: translateX(950px) rotate(15deg);
+            }
+  }
+
+}
+
+.site1 {
+  height: 350px;
+  width: auto;
+  position: absolute;
+  left: 40px;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
+  
+&:hover {
+  z-index: 11;
+}
+
+}
+.site2 {
+  height: 350px;
+  width: auto;
+  position: absolute;
+  left: 40px;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
+
+  &:hover {
+    z-index: 11;
+  }
+}
+
+.site3 {
+  height: 350px; 
+  width: auto;
+  position: absolute;
+  left: 40px;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
+
+  &:hover {
+    z-index: 11;
+  }
+}
+
+.site4 {
+  height: 350px;
+  width: auto;
+  position: absolute;
+  left: 40px;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
+
+  &:hover {
+    z-index: 11;
+  }
+}
+
+.site5 {
+  height: 350px;
+  width: auto;
+  position: absolute;
+  left: 40px;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
+   
+  &:hover {
+    z-index: 11;
+  }
+}
+
+
+
+
+@media(min-width: 2500px) {
+  .labs {
+    right: 430px;
+      top: 95px;
+  }
+}
+
+
+  // SECTION 3 //
+
+
+  .Head3 {
+    font-size: 5rem;
+    font-family: apercu, sans-serif;
+  }
