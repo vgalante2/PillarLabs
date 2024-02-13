@@ -74,6 +74,7 @@ function About() {
               },
               fill: "#87ecaf",
              duration: 0.5,
+             
         }
         );
 
