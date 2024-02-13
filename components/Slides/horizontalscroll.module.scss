@@ -260,4 +260,12 @@ background-color: black;
   .Head3 {
     font-size: 5rem;
     font-family: apercu, sans-serif;
+    z-index: 2;
+  }
+
+  .circle {
+    position: absolute;
+    color: $purple;
+    z-index: 1;
+    filter: blur(15px);
   }

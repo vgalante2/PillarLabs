@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Header />
       <About />
-      <Work />
+      <Work  />
       <HorizontalScroll />
     </>
   )
