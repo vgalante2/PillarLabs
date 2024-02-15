@@ -1,0 +1,147 @@
+@import 'variables.module.scss';
+
+.workSection {
+height: 100vh;
+width: auto;
+background-color: black;
+display: flex;
+justify-content: center;
+
+flex-direction: column;
+gap: 150px;
+
+}
+
+.workContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+}
+
+.workHeading {
+    color: white;
+    font-size: 5rem;
+    font-family: apercu, sans-serif;
+    width: auto;
+}
+
+.labs {
+  height: 30px;
+  width: 60px;
+  background-color: $purple;
+  align-items: center;
+  font-family: apercu, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: flex;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  border-radius: 4px;
+  position: relative;
+ right: 30px;
+ top:20px;
+  transform: rotate(-20deg);
+}
+
+
+.workContent {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+    
+    
+}
+
+
+.heading_one {
+  z-index: 10;
+  font-family: apercu, sans-serif;
+color: white;
+  
+}
+
+
+.card {
+  position: relative;
+  width: 25%;
+  height: 350px;
+  background: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+
+.card h1 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+
+.card:hover h1 {
+  opacity: 0;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,$purple,$green);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,$purple,$green);
+  filter: blur(30px);
+}
+
+.card b {
+  position: absolute;
+  inset: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+
+.card .content {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  transform: scale(1);
+  bottom: 80px;
+}
+
+.content .title {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: .5rem;
+  font-family: apercu, sans-serif;
+}
+
+.title{
+  width: 80%;
+}
