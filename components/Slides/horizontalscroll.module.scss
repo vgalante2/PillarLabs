@@ -143,13 +143,14 @@ background-color: black;
   .Head2 {
     font-size: 9rem;
     font-family: apercu, sans-serif;
-    width: 100%;
+    width: auto;
+
   } 
 
   .labs {
     height: 45px;
     width: 90px;
-    background-color: $purple;
+    background-color: $green;
     align-items: center;
     font-family: apercu, sans-serif;
     font-weight: 700;
@@ -159,7 +160,7 @@ background-color: black;
     justify-content: center;
     border-radius: 4px;
     position: relative;
-      right: 165px;
+      right: 30px;
       top: 95px;
     transform: rotate(-30deg);
 
