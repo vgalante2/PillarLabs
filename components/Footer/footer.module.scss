@@ -1,0 +1,37 @@
+@import 'variables.module.scss';
+
+.Footer {
+    height: 40vh;
+    width: auto;
+    background-color: black;
+}
+
+.FooterContent {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.FooterName {
+    color: white;
+    font-family: apercu, sans-serif;
+    margin-bottom: 25px;
+}
+
+.FooterLabs {
+    color: $green;
+    font-family: apercu, sans-serif;
+
+}
+
+.FooterPillar {
+    color: $purple;
+    font-family: apercu, sans-serif;
+    margin-bottom: 25px;
+}
+
+.pillar {
+    height: 120px;
+}

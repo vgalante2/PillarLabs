@@ -4,8 +4,8 @@ import Header from "../components/Header/Header";
 import About from "../components/About/About";
 import HorizontalScroll from "../components/Slides/HorizontalScroll";
 import Work from "../components/PoW/Work";
-
-
+import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
 
@@ -16,6 +16,8 @@ export default function Home() {
       <About />
       <Work  />
       <HorizontalScroll />
+      <Contact />
+      <Footer />
     </>
   )
 }
