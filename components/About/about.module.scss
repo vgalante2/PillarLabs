@@ -192,3 +192,11 @@
         padding: 1rem 1.5rem;
        z-index: 5;
     }
+
+
+    @media(max-width: 767px) {
+      .infoBox_Two, .infoBox_One {
+        width: 350px;
+        height: 150px;
+      }
+    }

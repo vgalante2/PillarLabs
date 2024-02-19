@@ -85,8 +85,8 @@ function HorizontalScroll() {
                     </div>
                    </div>
                    <div className={styles.siteImg}>
-                     <img src="./site1.png" className={styles.site1} />
-                     <img src="./site5.png" className={styles.site2} />
+                     <img src="./site5.png" className={styles.site1} />
+                     <img src="./site1.png" className={styles.site2} />
                      <img src="./site4.png" className={styles.site3} />
                      <img src="./site2.png" className={styles.site4} />
                      <img src="./site3.png" className={styles.site5} />

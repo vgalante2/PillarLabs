@@ -83,15 +83,15 @@ background-color: black;
 @keyframes hover {
   0%, 100% {
     
-    transform: translate(-540px, 0) rotate(-14deg);
+    transform: translate(-580px, 0) rotate(-14deg);
     
   }
   
   25% {
-    transform: translate(150px, -220px) rotate(4deg); /* Slight upward to anticipate the move */
+    transform: translate(200px, -250px) rotate(4deg); /* Slight upward to anticipate the move */
   }
   50% {
-    transform: translate(300px, 0) rotate(5deg); /* Peak horizontal movement */
+    transform: translate(580px, 0) rotate(5deg); /* Peak horizontal movement */
   }
   75% {
     transform: translate(150px, 140px) rotate(-5deg); /* Slight downward to smooth the transition */
@@ -220,6 +220,7 @@ background-color: black;
   left: 40px;
   transition: transform 0.5s ease-in-out;
   border-radius: 20px;
+  z-index: 99;
   
 &:hover {
   z-index: 11;
@@ -272,6 +273,7 @@ background-color: black;
   left: 40px;
   transition: transform 0.5s ease-in-out;
   border-radius: 20px;
+  
    
   &:hover {
     z-index: 11;

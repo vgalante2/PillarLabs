@@ -18,7 +18,7 @@
 
 .relative {
    max-height: 100vh;
- 
+   
 }
 
 .HeaderContainer, .HeaderContainerTwo, .HeaderContainerFour{
@@ -135,7 +135,9 @@
     
 }
 
-@media(max-width: 676px) {
-
+@media(max-width: 767px) {
+.HeadingOne, .HeadingTwo, .HeadingThree {
+font-size: 3rem;
+}
 
 }

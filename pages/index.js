@@ -3,7 +3,8 @@ import styles from '@/styles/Home.module.scss'
 import Header from "../components/Header/Header";
 import About from "../components/About/About";
 import HorizontalScroll from "../components/Slides/HorizontalScroll";
-import Work from "../components/PoW/Work";
+
+import Features from "../components/PoW/Features";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 
@@ -14,7 +15,7 @@ export default function Home() {
     <>
       <Header />
       <About />
-      <Work  />
+      <Features />
       <HorizontalScroll />
       <Contact />
       <Footer />
