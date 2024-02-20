@@ -16,15 +16,15 @@ function Header() {
 
     const text = new SplitType('#target', { types: 'chars' })
 
-     gsap.set("#target", { autoAlpha: 0 });
+     gsap.set("#target", { opacity: 0 });
      gsap.set(text.chars, { yPercent: 150 });
 
      const initalAnimation = gsap.to(text.chars, {
-      yPercent: 1,
+      yPercent: 0,
       ease: "sine.out",
       stagger: {from: "center", amount: 0.5, ease: "power1.out" }
      });
-     gsap.to("#target", { duration: 3, autoAlpha: 1 });
+     gsap.to("#target", { duration: 3, opacity: 1 });
      
   })
 
