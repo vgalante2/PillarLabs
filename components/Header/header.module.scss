@@ -23,9 +23,7 @@
     top: 490px;
     z-index: 10;
 }
-.logo {
-   visibility: hidden;
-}
+
 
 .pillar {
     font-size: 15rem;
@@ -33,7 +31,11 @@
     padding: 2rem 1rem;
    color: white;
    text-align: center;
-   font-kerning: none;
+  
+
+   @media(max-width: 767px) {
+    font-size: 5rem;
+   }
 }
 
 .labs {
@@ -45,7 +47,11 @@
     position: relative;
     right: 94px;
     bottom: 20px;
-    font-kerning: none;
+    
+
+    @media(max-width: 767px) {
+        font-size: 1.5rem;
+    }
 }
 
 
