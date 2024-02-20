@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: black;
-    z-index: 10;
+   
 
 
 }
@@ -22,6 +22,11 @@
     position: relative;
     top: 490px;
     z-index: 10;
+
+    @media(max-width: 767px) {
+       top: -45px;
+       height: 20%;
+       }
 }
 
 
@@ -50,7 +55,11 @@
     
 
     @media(max-width: 767px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        right: 30px;
+        bottom: 5px;
+        border-radius: 10px;
+        padding: 3px 5px;
     }
 }
 
