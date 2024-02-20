@@ -2,8 +2,14 @@
 
 .Footer {
     height: 40vh;
-    width: auto;
+    width: 100%;
     background-color: black;
+
+
+    @media(max-width: 440px) {
+       height: 20vh;
+      
+    }
 }
 
 .FooterContent {
@@ -11,6 +17,7 @@
     align-items: flex-end;
     justify-content: center;
     height: 100%;
+    width: auto;
     
 }
 
@@ -18,11 +25,20 @@
     color: white;
     font-family: apercu, sans-serif;
     margin-bottom: 25px;
+
+
+    @media(max-width: 440px) {
+       font-size: 15px;
+    }
 }
 
 .FooterLabs {
     color: $green;
     font-family: apercu, sans-serif;
+
+    @media(max-width: 440px) {
+        font-size: 15px;
+     }
 
 }
 
@@ -30,8 +46,17 @@
     color: $purple;
     font-family: apercu, sans-serif;
     margin-bottom: 25px;
+
+    @media(max-width: 440px) {
+        font-size: 15px;
+     }
 }
 
 .pillar {
     height: 120px;
+
+    @media(max-width: 440px) {
+        width: 100px;
+        height: 60px;
+    }
 }

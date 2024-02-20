@@ -19,7 +19,7 @@ function Features() {
 
     <div className={styles.workContent}>
     <div className={styles.card}>
-      <img src="img1.png" />
+      <img  className={styles.img} src="img1.png" />
       <div>
         <h2 className={styles.Heading}>Creatives</h2>
         <h3 className={styles.SubHead}>Digital Masterpieces</h3>
@@ -30,18 +30,18 @@ function Features() {
       </div>
     </div>
     <div className={styles.card}>
-      <img src="img2.png" />
+      <img className={styles.img} src="img2.png" />
       <div>
         <h2 className={styles.Heading}>Development</h2>
         <h3 className={styles.SubHead}>UX/UI Design</h3>
         <p className={styles.Text}>
-        In the realm of web creation, every pixel counts. Our approach combines cutting-edge design with seamless functionality, crafting bespoke websites that are both visually striking and user-friendly. Whether it's an e-commerce platform, a portfolio site, or a digital hub for your business, our team ensures your online presence stands out in the digital landscape, optimized for engagement and performance.
+        In the realm of web creation, every pixel counts. Our approach combines cutting-edge design with seamless functionality, crafting websites both visually striking and user-friendly. Whether it's an e-commerce platform, a portfolio site, or a digital hub for your business, our team ensures your online presence stands out in the digital landscape, optimized for engagement and performance.
         </p>
         <button className={styles.Btn}>Learn More</button>
       </div>
     </div>
     <div className={styles.card}>
-      <img src="img3.png" />
+      <img className={styles.img} src="img3.png" />
       <div>
         <h2 className={styles.Heading}>Advertisement</h2>
         <h3 className={styles.SubHead}>Branding/Message</h3>

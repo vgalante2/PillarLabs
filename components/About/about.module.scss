@@ -194,9 +194,139 @@
     }
 
 
+    // @media(max-width: 767px) {
+    //   .infoBox_Two, .infoBox_One {
+    //     width: 250px;
+    //     height: 150px;
+    //   }
+
+    //   .p_text {
+    //     font-size: 10px;
+    //   }
+
+    //   .h_text {
+    //     font-size: 0.6rem;
+    //   }
+
+    //   .secondText {
+    //     font-size: 4rem;
+    //   }
+
+    //   .AboutTitle {
+    //      font-size: 4rem;
+    //   }
+
+    //   .TextContainer {
+    //     z-index: 20;
+    //   }
+
+     
+    // }
+
     @media(max-width: 767px) {
       .infoBox_Two, .infoBox_One {
         width: 350px;
         height: 150px;
+        z-index: 2;
+      }
+
+      .p_text {
+        font-size: 0.8rem;
+      }
+
+      .h_text {
+        font-size: 1.3rem;
+      }
+
+      .secondHead {
+        font-size: 5rem;
+      }
+
+      .codesvg {
+        height: 50px;
+        width: 20px;
+      }
+
+      .secondText {
+        font-size: 0.9rem;
+      }
+
+      .AboutTitle {
+         font-size: 5rem;
+      }
+
+      .TextContainer {
+        z-index: 20;
+      }
+
+      .InfoContainer {
+         gap: 20px;
+         width: 90%;
+      }
+
+      .line {
+        width: 500px;
+        left: -115px;
+        top: 910px;
+        height: 500px;
+        z-index: 1;
+      }
+
+      .svg {
+        width: 300px;
+        left: -150px;
+      }
+
+      .labs {
+        height: 35px;
+        width: 60px;
+        font-size: 1.3rem;
+       right: 30px;
+       top: 20px;
+        transform: rotate(-20deg);
       }
     }
+
+
+@media(max-width: 440px) {
+  .secondText {
+    font-size: 0.9rem;
+  }
+
+  .AboutTitle {
+     font-size: 3rem;
+  }
+
+  .TextContainer {
+    z-index: 20;
+  }
+
+  .InfoContainer {
+     gap: 20px;
+     width: 90%;
+  }
+
+  .infoBox_Two, .infoBox_One {
+    width: 200px;
+    height: 250px;
+    z-index: 2;
+    padding: 5px;
+  }
+
+  .secondHead {
+    font-size: 2.3rem;
+  }
+
+
+  .p_text {
+    font-size: 8px;
+  }
+
+  .h_text {
+    font-size: 20px;
+  }
+
+  .AboutText {
+    font-size: 12px;
+  }
+}

@@ -61,12 +61,12 @@ background-color: black;
   }
 
 
-  .pillar {
-    position: absolute;
-    bottom: 0;
+  // .pillar {
+  //   position: absolute;
+  //   bottom: 0;
 
-    height:300px;
-  }
+  //   height:300px;
+  // }
 
 
 .drone {
@@ -188,26 +188,42 @@ background-color: black;
     .site1 {
     
     transform: rotate(-20deg) translateX(-60px) translateY(-200px);
+
+    @media(max-width: 440px) {
+      transform: rotate(-20deg) translateX(-30px) translateY(-100px);
+    }
     }
 
     .site2 {
      
       transform: rotate(-30deg) translateX(150px) translateY(100px);
+      @media(max-width: 440px) {
+        transform: rotate(-30deg) translateX(150px) translateY(100px);
+      }
       }
 
       .site3 {
        
         transform: rotate(20deg) translateX(500px) translateY(-90px);
+        @media(max-width: 440px) {
+          transform: rotate(20deg) translateX(100px) translateY(-90px);
+        }
         }
 
         .site4 {
           
           transform: rotate(-10deg) translateX(800px) translateY(-60px);
+          @media(max-width: 440px) {
+            transform: rotate(-10deg) translateX(150px) translateY(-60px);
+          }
           }
 
           .site5 {
             
             transform: translateX(950px) rotate(15deg);
+            @media(max-width: 440px) {
+              transform: translateX(250px) rotate(15deg);
+            }
             }
   }
 
@@ -311,3 +327,109 @@ background-color: black;
     position: absolute;
 
   }
+
+  @media(max-width: 440px) {
+    .Head1 {
+      font-size: 2rem;
+      font-family: apercu, sans-serif;
+      padding: 1rem;
+     
+    }
+  
+    .story{
+      color: $purple;
+    }
+  
+    .para1 {
+     width: 80%;
+     font-size: 0.5rem;
+     position: relative;
+     right: 20px;
+     top: 50px;
+     font-family: apercu, sans-serif;
+    }
+
+    .drone {
+      height: 100px;
+      width: auto;
+      position: absolute;
+      bottom: 310px;
+      left: 45.5%;
+      z-index: 1;
+      transition: transform 0.2s;
+      animation: hover 4.5s ease-in-out infinite;
+      
+    }
+    
+    @keyframes hover {
+      0%, 100% {
+        
+        transform: translate(-180px, 0) rotate(-14deg);
+        
+      }
+      
+      25% {
+        transform: translate(150px, -250px) rotate(4deg); /* Slight upward to anticipate the move */
+      }
+      50% {
+        transform: translate(280px, 0) rotate(5deg); /* Peak horizontal movement */
+      }
+      75% {
+        transform: translate(150px, 140px) rotate(-5deg); /* Slight downward to smooth the transition */
+      }
+    }
+
+    .site1, .site2, .site3, .site4, .site5 {
+      height: 150px;
+    }
+
+
+    .Head2 {
+      font-size: 1.7rem;
+      width: 100%;
+    }
+    .SmallText2 {
+      font-size: 0.7rem;
+      width: 100%;
+    }
+
+    .labs {
+      height: 10px;
+      width: 25px;
+        right: 55px;
+        top: 20px;
+      transform: rotate(-30deg);
+
+    }
+
+    .siteImg {
+      height: 70%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: -95px;
+      top: 100px;
+
+    }
+
+    .Head3 {
+      font-size: 1.4em;
+      font-family: apercu, sans-serif;
+      z-index: 2;
+    }
+  
+    .circle {
+      position: absolute;
+      color: $purple;
+      z-index: 1;
+      filter: blur(15px);
+      height: 250px;
+    }
+
+    }
+    
+
+  
+  

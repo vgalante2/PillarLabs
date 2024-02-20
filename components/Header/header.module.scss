@@ -136,8 +136,54 @@
 }
 
 @media(max-width: 767px) {
-.HeadingOne, .HeadingTwo, .HeadingThree {
-font-size: 3rem;
+.headingOne, .headingThree {
+font-size: 7rem;
 }
 
+.headingTwo {
+    font-size: 3rem;
+}
+
+.box2 {
+    height: 35px;
+    width: 75px;
+    font-size: 1.3rem;
+    display: flex;
+    top: 25px;
+    right: 10%;
+    transform: rotate(-20deg);
+}
+
+.box1 {
+    height: 35px;
+    width: 75px;
+    background-color: $green;
+    font-size: 1rem;
+    top: 30px;
+    right: 55px;
+    transform: rotate(-20deg);
+}
+
+.box3 {
+    height: 25px;
+    width: 60px;
+    font-size: 1rem;
+    left: 95%;
+   bottom: 85px;
+    
+    
+    
+}
+
+}
+
+
+@media(max-width: 440px) {
+    .headingOne, .headingThree {
+        font-size: 4rem;
+        }
+        
+        .headingTwo {
+            font-size: 2rem;
+        }
 }
