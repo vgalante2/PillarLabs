@@ -15,20 +15,6 @@
 
 }
 
-.wrapper {
-    background-color: rgb(0, 0, 0) !important;
-    height: 27%;
-    width: 100%;
-    position: relative;
-    top: 490px;
-    z-index: 10;
-
-    @media(max-width: 767px) {
-       top: -45px;
-       height: 20%;
-       }
-}
-
 
 .pillar {
     font-size: 15rem;

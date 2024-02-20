@@ -16,7 +16,7 @@ function Header() {
 
     const text = new SplitType('#target', { types: 'chars' })
 
-     gsap.set("#target", { autoAlpha: 1 });
+     gsap.set("#target", { autoAlpha: 0 });
      gsap.set(text.chars, { yPercent: 150 });
 
      const initalAnimation = gsap.to(text.chars, {
@@ -24,6 +24,8 @@ function Header() {
       ease: "sine.out",
       stagger: {from: "center", amount: 0.5, ease: "power1.out" }
      });
+     gsap.to("#target", { duration: 3, autoAlpha: 1 });
+     
   })
 
 
@@ -34,7 +36,7 @@ function Header() {
         <div  className={styles.container}>
         <div  className={styles.HeaderContainer}>
         <h1 id="target" className={`${styles.pillar} ${styles.logo}`}>Pillar <span id="target" className={`${styles.labs} ${styles.logo}`}>Labs</span></h1>
-        <div className={styles.wrapper}></div>
+        
            
         </div>
         </div>
