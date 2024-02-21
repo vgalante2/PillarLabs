@@ -20,7 +20,7 @@ function Features() {
     <div className={styles.workContent}>
     <div className={styles.card}>
       <img  className={styles.img} src="img1.png" />
-      <div>
+      <div className={styles.TextContainer}>
         <h2 className={styles.Heading}>Creatives</h2>
         <h3 className={styles.SubHead}>Digital Masterpieces</h3>
         <p className={styles.Text}>
@@ -31,7 +31,7 @@ function Features() {
     </div>
     <div className={styles.card}>
       <img className={styles.img} src="img2.png" />
-      <div>
+      <div className={styles.TextContainer}>
         <h2 className={styles.Heading}>Development</h2>
         <h3 className={styles.SubHead}>UX/UI Design</h3>
         <p className={styles.Text}>
@@ -42,7 +42,7 @@ function Features() {
     </div>
     <div className={styles.card}>
       <img className={styles.img} src="img3.png" />
-      <div>
+      <div className={styles.TextContainer}>
         <h2 className={styles.Heading}>Advertisement</h2>
         <h3 className={styles.SubHead}>Branding/Message</h3>
         <p className={styles.Text}>
