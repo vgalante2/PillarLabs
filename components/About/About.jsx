@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './about.module.scss';
-import { gsap } from 'gsap';
+import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
 
