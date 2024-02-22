@@ -2,7 +2,7 @@ import styles from "./header.module.scss";
 import React, { useEffect} from "react";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import SplitType from 'split-type'
-import gsap from "gsap";
+import { gsap } from "gsap/dist/gsap";
 
 
 function Header() {
