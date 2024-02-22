@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
 import styles from './horizontalscroll.module.scss';
-import { useGSAP } from '@gsap/react';
+
 
 
 

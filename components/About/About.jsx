@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './about.module.scss';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
-import { useGSAP } from '@gsap/react';
+
 
 
 
@@ -16,7 +16,7 @@ function About() {
 
     gsap.registerPlugin(ScrollTrigger,MotionPathPlugin);
 
-    useGSAP(() => {
+    useEffect(() => {
 
         const path = document.querySelector('#line path');
         const pathLength = path.getTotalLength();

@@ -21,6 +21,6 @@
     "split-type": "^0.3.4"
   },
   "devDependencies": {
-    "sass": "^1.69.7"
+    "sass": "^1.71.1"
   }
 }

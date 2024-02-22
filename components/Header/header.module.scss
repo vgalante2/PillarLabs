@@ -39,6 +39,9 @@
     right: 94px;
     bottom: 20px;
     
+    .toggled {
+        background-color: $green; // Example effect when toggled, adjust as necessary
+      }
 
     @media(max-width: 767px) {
         font-size: 1.2rem;

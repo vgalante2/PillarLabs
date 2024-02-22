@@ -1,13 +1,11 @@
 import styles from "./header.module.scss";
 import React, { useEffect} from "react";
-import { useRef} from "react";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import SplitType from 'split-type'
 import gsap from "gsap";
-import { useGSAP } from '@gsap/react';
+
 
 function Header() {
-
 
 
   useEffect(() => {
@@ -26,16 +24,19 @@ function Header() {
      });
      gsap.to("#target", { duration: 3, opacity: 1 });
      
+
+     
   })
 
 
 
-
+  
 
     return(
         <div  className={styles.container}>
         <div  className={styles.HeaderContainer}>
-        <h1 id="target" className={`${styles.pillar} ${styles.logo}`}>Pillar <span id="target" className={`${styles.labs} ${styles.logo}`}>Labs</span></h1>
+        <h1 id="target" className={`${styles.pillar} ${styles.logo}`}>Pillar <span  
+            className={`${styles.labs} ${styles.logo}`}>Labs</span></h1>
         
            
         </div>
