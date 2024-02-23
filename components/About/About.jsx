@@ -13,6 +13,7 @@ function About() {
     const FlashRef = useRef(null); 
     const AboveRef = useRef(null);
     const BoxRef = useRef(null);
+   
 
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
@@ -77,6 +78,7 @@ function About() {
         }
         );
 
+    
         gsap.to("#glow", {
             scrollTrigger: {
                 trigger: BoxRef.current,
