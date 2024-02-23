@@ -1,8 +1,8 @@
 import styles from "./header.module.scss";
 import React, { useRef } from "react";
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type'
-import { gsap } from "gsap/dist/gsap";
+import { gsap } from "gsap";
 import {useGSAP} from '@gsap/react';
 
 function Header() {
