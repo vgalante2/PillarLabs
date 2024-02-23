@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
 import styles from './horizontalscroll.module.scss';
 

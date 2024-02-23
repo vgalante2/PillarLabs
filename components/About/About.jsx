@@ -1,26 +1,26 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import styles from './about.module.scss';
-import { gsap, ScrollTrigger, MotionPathPlugin } from "gsap/all";
-
-
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
+import {useGSAP} from '@gsap/react';
 
 
 
 
 function About() {
     const HeadingRef = useRef(null);
-    const FlashRef = useRef(null); // Use a ref for the container
+    const FlashRef = useRef(null); 
     const AboveRef = useRef(null);
     const BoxRef = useRef(null);
 
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-    useEffect(() => {
+    useGSAP(() => {
 
         const path = document.querySelector('#line path');
         const pathLength = path.getTotalLength();
        
-
         gsap.set(path, { strokeDasharray: pathLength, strokeDashoffset: pathLength });
 
         gsap.fromTo(
@@ -29,9 +29,9 @@ function About() {
             {
                 y: 150, opacity: 1, duration: 1.3, ease: 'bounce.out',
                 scrollTrigger: {
-                    trigger: HeadingRef.current, // Use the ref for the trigger
-                    start: "top center", // Start the animation when the top of the container is at the center of the viewport
-                    toggleActions: "restart none none reset", // Defines what happens to the animation at certain scroll points
+                    trigger: HeadingRef.current,
+                    start: "top center", 
+                    toggleActions: "restart none none reset", 
                 }
             }
         );
@@ -42,8 +42,8 @@ function About() {
             {
                 y: 150, opacity: 1, duration: 1.3, ease: 'bounce.out',
                 scrollTrigger: {
-                    trigger: HeadingRef.current, // Use the ref for the trigger
-                    start: "top center", // Same trigger settings for the second box
+                    trigger: HeadingRef.current,
+                    start: "top center", 
                     toggleActions: "restart none none reset",
                 }
             }
@@ -53,13 +53,13 @@ function About() {
          { strokeDashoffset: pathLength },
           {
             strokeDashoffset: 0,
-            duration: 1, // Duration is arbitrary, the ScrollTrigger's scrub will control the playback
+            duration: 1,
             ease: 'none',
             scrollTrigger: {
                 trigger: FlashRef.current,
-                start: "top center", // when the top of the trigger hits the bottom of the viewport
-                end: "bottom top", // when the bottom of the trigger hits the top of the viewport
-                scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                start: "top center", 
+                end: "bottom top", 
+                scrub: true, 
             }
          }
         );
@@ -84,13 +84,13 @@ function About() {
                 end: "bottom top",
                 toggleActions: "play none none reverse",
               },
-              color: "white", // The new color
+              color: "white", 
         duration: 0.5, 
         }
         );
 
         return () => {
-            // On cleanup, kill all ScrollTriggers to prevent memory leaks
+           
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
     }, []);

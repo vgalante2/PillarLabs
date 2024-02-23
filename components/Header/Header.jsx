@@ -1,32 +1,34 @@
 import styles from "./header.module.scss";
-import React, { useEffect} from "react";
+import React, { useRef } from "react";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import SplitType from 'split-type'
 import { gsap } from "gsap/dist/gsap";
-
+import {useGSAP} from '@gsap/react';
 
 function Header() {
   gsap.registerPlugin(ScrollTrigger);
+  const logo = useRef();
 
-  useEffect(() => {
+  useGSAP(() => {
 
-   
+    const text = new SplitType(logo.current, { types: 'chars' })
 
-    const text = new SplitType('#target', { types: 'chars' })
 
-     gsap.set("#target", { opacity: 0 });
-     gsap.set(text.chars, { yPercent: 150 });
+    gsap.set(logo.current, { opacity: 0 });
+    gsap.set(text.chars, { yPercent: 115 });
 
-     const initalAnimation = gsap.to(text.chars, {
+     
+    gsap.to(logo.current, { duration: 3, opacity: 1, ease: "power1.out"});
+    gsap.to(text.chars, {
       yPercent: 0,
       ease: "sine.out",
-      stagger: {from: "center", amount: 0.5, ease: "power1.out" }
-     });
-     gsap.to("#target", { duration: 3, opacity: 1 });
-     
+      stagger: 0.05,
+      opacity: 1,
+    });
 
+    
      
-  })
+  }, {scope: logo});
 
 
 
@@ -35,7 +37,7 @@ function Header() {
     return(
         <div  className={styles.container}>
         <div  className={styles.HeaderContainer}>
-        <h1 id="target" className={`${styles.pillar} ${styles.logo}`}>Pillar <span  
+        <h1 ref={logo} id="target" className={`${styles.pillar} ${styles.logo}`}>Pillar <span  
             className={`${styles.labs} ${styles.logo}`}>Labs</span></h1>
         
            
