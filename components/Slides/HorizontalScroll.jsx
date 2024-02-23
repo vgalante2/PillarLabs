@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
 import styles from './horizontalscroll.module.scss';
 
@@ -12,8 +13,10 @@ function HorizontalScroll() {
     const triggerRef = useRef(null);
     // const SvgRef = useRef(null);
 
+    gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+       
 
 
 

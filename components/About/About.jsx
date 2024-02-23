@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './about.module.scss';
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
+import { gsap, ScrollTrigger, MotionPathPlugin } from "gsap/all";
+
 
 
 
@@ -14,7 +13,7 @@ function About() {
     const AboveRef = useRef(null);
     const BoxRef = useRef(null);
 
-    gsap.registerPlugin(ScrollTrigger,MotionPathPlugin);
+    gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
     useEffect(() => {
 

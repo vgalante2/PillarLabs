@@ -6,11 +6,11 @@ import { gsap } from "gsap/dist/gsap";
 
 
 function Header() {
-
+  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
 
-    gsap.registerPlugin(ScrollTrigger);
+   
 
     const text = new SplitType('#target', { types: 'chars' })
 
